@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" 
-    xmlns:th="http://www.thymeleaf.org"
-    xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
     <head>
         <title>Listado Clientes</title>
         <meta charset="UTF-8"/>
@@ -48,9 +48,30 @@
                             <div class="text-center p-2" th:if="${personas == null or personas.empty}">
                                 <span th:text="#{persona.lista-vacia}">[[#{persona.lista-vacia}]]</span>
                             </div>
-                            
+
                         </div>
                     </div>
+
+                    <div class="col-md-3">
+                        <div class="card text-center bg-danger text-white mb-3 mr-5 ">
+                            <div class="card-body">
+                                <h3 th:text="#{persona.saldoTotal}">Saldo Total</h3>
+                                <h4 class="display-4">
+                                    [[${new java.text.DecimalFormat('$#,##0.00').format(saldoTotal)}]]
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="card text-center bg-success text-white mb-3 mr-5">
+                            <div class="card-body">
+                                <h3 th:text="#{persona.totalClients}">Total Clientes</h3>
+                                <h4 class="display-4">
+                                    [[${totalClientes}]]
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
