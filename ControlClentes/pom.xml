@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>mx.com.gm</groupId>
-    <artifactId>ControlClentes</artifactId>
+    <artifactId>ControlClientes</artifactId>
     <version>1.0</version>
     <name>ControlClientes</name>
     <description>HolaMundo con Spring</description>
