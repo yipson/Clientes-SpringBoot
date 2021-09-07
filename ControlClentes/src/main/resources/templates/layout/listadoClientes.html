@@ -48,12 +48,11 @@
                             <div class="text-center p-2" th:if="${personas == null or personas.empty}">
                                 <span th:text="#{persona.lista-vacia}">[[#{persona.lista-vacia}]]</span>
                             </div>
-
                         </div>
                     </div>
 
                     <div class="col-md-3">
-                        <div class="card text-center bg-danger text-white mb-3 mr-5 ">
+                        <div class="card text-center bg-danger text-white mb-3 ml-5 mr-5">
                             <div class="card-body">
                                 <h3 th:text="#{persona.saldoTotal}">Saldo Total</h3>
                                 <h4 class="display-4">
@@ -62,7 +61,7 @@
                             </div>
                         </div>
 
-                        <div class="card text-center bg-success text-white mb-3 mr-5">
+                        <div class="card text-center bg-success text-white mb-3 ml-5 mr-5">
                             <div class="card-body">
                                 <h3 th:text="#{persona.totalClients}">Total Clientes</h3>
                                 <h4 class="display-4">
